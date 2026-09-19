@@ -1,0 +1,20 @@
+# Composite "Attack Score" (0-100 per hex).
+# Each input is percentile-ranked across all Phase 1 hexes, then weighted.
+# Raw components are exported alongside the score so weights can be re-tuned
+# in docs/app.js without re-running the pipeline.
+weights:
+  pct_owner_occ: 0.40          # owner-occupied share (OWNER_OCC + LIKELY_OWNER_OCC)
+  median_footprint_sqft: 0.25  # bigger roof = bigger system
+  pct_recent_sale: 0.15        # sold since recent_sale_since
+  n_sfh: 0.10                  # homes per hex = walkability
+  solar_penetration_inv: 0.10  # town-level installs / SFH, inverted (less solar = more headroom)
+
+# Living-area tiers (sqft). Lower bound inclusive.
+size_tiers:
+  S: [0, 1200]
+  M: [1200, 1800]
+  L: [1800, 2500]
+  XL: [2500, null]
+
+# "Big roof" = footprint_sqft at or above this percentile across all Phase 1 SFH.
+big_roof_percentile: 85
