@@ -1,0 +1,60 @@
+# Cape Territory Map — town configuration.
+# Adding a town = adding one block under `towns:` and running `python pipeline/run.py`.
+#
+# massgis_town_id : MassGIS TOWN_ID (verified against the L3 parcel download URLs, 2026-09).
+# cousub_fips     : Census county-subdivision FIPS within Barnstable County (state 25, county 001).
+# zips            : ZIP -> village label. Villages are not polygons in MassGIS; we label by ZIP.
+# sanity_sfh_range: expected count of single-family (USE_CODE 101) parcels; run.py warns if outside.
+
+phase: 1
+h3_resolution: 9
+recent_sale_since: "2023-09-01"
+new_owner_since: "2025-09-01"
+min_homes_per_hex: 5
+
+sources:
+  # Verified with HEAD requests 2026-09-19. {town_id} is zero-padded to 3 digits, {TOWN} is upper-case name.
+  parcels_url: "https://s3.us-east-1.amazonaws.com/download.massgis.digital.mass.gov/shapefiles/l3parcels/L3_SHP_M{town_id:03d}_{TOWN}.zip"
+  # {town_id} is NOT zero-padded here (structures_poly_20.zip, structures_poly_75.zip, structures_poly_351.zip).
+  structures_url: "https://s3.us-east-1.amazonaws.com/download.massgis.digital.mass.gov/shapefiles/structures/structures_poly_{town_id}.zip"
+  towns_url: "https://s3.us-east-1.amazonaws.com/download.massgis.digital.mass.gov/shapefiles/state/townssurvey_shp.zip"
+  masscec_pts_page: "https://www.masscec.com/production-tracking-system-pts"
+  census_acs_year: 2023
+
+towns:
+  - name: Barnstable
+    massgis_town_id: 20
+    cousub_fips: "03690"
+    residential_exemption: true
+    zips:
+      "02601": Hyannis
+      "02630": Barnstable Village
+      "02632": Centerville
+      "02635": Cotuit
+      "02637": Cummaquid
+      "02647": Hyannis Port
+      "02648": Marstons Mills
+      "02655": Osterville
+      "02668": West Barnstable
+      "02672": West Hyannisport
+    sanity_sfh_range: [15000, 21000]
+  - name: Yarmouth
+    massgis_town_id: 351
+    cousub_fips: "82525"
+    residential_exemption: false
+    zips:
+      "02664": South Yarmouth
+      "02673": West Yarmouth
+      "02675": Yarmouth Port
+    sanity_sfh_range: [8000, 12000]
+  - name: Dennis
+    massgis_town_id: 75
+    cousub_fips: "16775"
+    residential_exemption: false
+    zips:
+      "02638": Dennis
+      "02639": Dennis Port
+      "02641": East Dennis
+      "02660": South Dennis
+      "02670": West Dennis
+    sanity_sfh_range: [7500, 11500]
