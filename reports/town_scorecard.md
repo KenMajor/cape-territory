@@ -1,6 +1,6 @@
 # Town scorecard — Phase 1 (Mid-Cape)
 
-Generated 2026-09-19 01:17 UTC. Recent sale = since 2023-09-01; new owner = since 2025-09-01.
+Generated 2026-09-19 01:29 UTC. Recent sale = since 2023-09-01; new owner = since 2025-09-01.
 Solar source: MassCEC PTS report as of 2025-01-14. Census: pending: CENSUS_API_KEY not set.
 
 | Metric | Barnstable | Yarmouth | Dennis |
