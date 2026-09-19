@@ -1,7 +1,7 @@
 # Town scorecard — Phase 1 (Mid-Cape)
 
-Generated 2026-09-19 15:30 UTC. Recent sale = since 2023-09-01; new owner = since 2025-09-01.
-Solar source: MassCEC PTS report as of 2025-01-14. Census: pending: CENSUS_API_KEY not set.
+Generated 2026-09-19 23:26 UTC. Recent sale = since 2023-09-01; new owner = since 2025-09-01.
+Solar source: MassCEC PTS report as of 2025-01-14. Census: ACS 2023 5-year.
 
 | Metric | Barnstable | Yarmouth | Dennis |
 |---|---:|---:|---:|
@@ -16,9 +16,9 @@ Solar source: MassCEC PTS report as of 2025-01-14. Census: pending: CENSUS_API_K
 | Absentee, out of state | 1,809 | 1,242 | 1,785 |
 | Owner address missing | 17 | 2 | 0 |
 | Res. exemption agreement % | not in extract | n/a (town has no residential exemption) | n/a (town has no residential exemption) |
-| Census owner-occ % (of occupied) | pending | pending | pending |
-| Census seasonal-vacant % (of units) | pending | pending | pending |
-| Census renter % (of occupied) | pending | pending | pending |
+| Census owner-occ % (of occupied) | 74.9 | 81.0 | 78.3 |
+| Census seasonal-vacant % (of units) | 21.2 | 29.9 | 51.7 |
+| Census renter % (of occupied) | 25.1 | 19.0 | 21.7 |
 | Median living sqft | 1,628 | 1,344 | 1,385 |
 | Median footprint sqft | 1,753 | 1,620 | 1,473 |
 | Footprint join hit % | 99.8 | 99.9 | 99.8 |
@@ -53,7 +53,3 @@ Solar source: MassCEC PTS report as of 2025-01-14. Census: pending: CENSUS_API_K
 | Dennis footprint hit rate >= 90% | PASS | 99.8% |
 | Dennis LS_DATE unparseable < 3% | PASS | 0.01% (1 rows) |
 | docs/data total size < 15 MB | PASS | 2.06 MB |
-
-## Notes
-
-- Census fields are pending: add CENSUS_API_KEY as an Actions secret and re-run.
