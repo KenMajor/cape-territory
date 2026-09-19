@@ -5,6 +5,11 @@
 # cousub_fips     : Census county-subdivision FIPS within Barnstable County (state 25, county 001).
 # zips            : ZIP -> village label. Villages are not polygons in MassGIS; we label by ZIP.
 # sanity_sfh_range: expected count of single-family (USE_CODE 101) parcels; run.py warns if outside.
+#                   Spec v1 ranges were Barnstable 15000-21000, Yarmouth 8000-12000, Dennis 7500-11500.
+#                   Verified counts (FY26/FY26/FY25 extracts, 2026-09): 21,130 / 12,947 / 11,753 —
+#                   all genuine 101 codes per the MassGIS use-code lookup, so upper bounds were raised ~10%.
+# village_aliases : other spellings of village names found in SITE_ADDR / CITY (Barnstable has no site ZIP).
+# street_village_suffixes: trailing tokens on FULL_STR that encode the village (Dennis: '... ROAD DE').
 
 phase: 1
 h3_resolution: 9
@@ -37,7 +42,14 @@ towns:
       "02655": Osterville
       "02668": West Barnstable
       "02672": West Hyannisport
-    sanity_sfh_range: [15000, 21000]
+    village_aliases:
+      "MARSTON MILLS": Marstons Mills
+      "BARNSTABLE": Barnstable Village
+      "HYANNISPORT": Hyannis Port
+      "W HYANNISPORT": West Hyannisport
+      "W BARNSTABLE": West Barnstable
+      "CUMMAQUID": Cummaquid
+    sanity_sfh_range: [15000, 23000]
   - name: Yarmouth
     massgis_town_id: 351
     cousub_fips: "82525"
@@ -46,7 +58,7 @@ towns:
       "02664": South Yarmouth
       "02673": West Yarmouth
       "02675": Yarmouth Port
-    sanity_sfh_range: [8000, 12000]
+    sanity_sfh_range: [8000, 14000]
   - name: Dennis
     massgis_town_id: 75
     cousub_fips: "16775"
@@ -57,4 +69,10 @@ towns:
       "02641": East Dennis
       "02660": South Dennis
       "02670": West Dennis
-    sanity_sfh_range: [7500, 11500]
+    street_village_suffixes:
+      DE: Dennis
+      ED: East Dennis
+      DP: Dennis Port
+      SD: South Dennis
+      WD: West Dennis
+    sanity_sfh_range: [7500, 12500]

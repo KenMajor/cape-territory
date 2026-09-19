@@ -1,0 +1,235 @@
+{
+ "generated_at": "2026-09-19 01:17 UTC",
+ "meta": {
+  "generated_at": "2026-09-19 01:17 UTC",
+  "phase": 1,
+  "recent_sale_since": "2023-09-01",
+  "new_owner_since": "2025-09-01",
+  "notes": [
+   "Census fields are pending: add CENSUS_API_KEY as an Actions secret and re-run."
+  ],
+  "big_roof_threshold_sqft": 2455,
+  "pts_as_of": "2025-01-14",
+  "pts_file": "Solar-PV-Systems-in-MA-as-of-Jan-2025.xlsx",
+  "census_status": "pending: CENSUS_API_KEY not set"
+ },
+ "towns": [
+  {
+   "town": "Barnstable",
+   "massgis_town_id": 20,
+   "cousub_fips": "03690",
+   "fy_vintage": 2026,
+   "n_parcels": 26872,
+   "n_sfh": 21130,
+   "n_secondary_104_105_109": 861,
+   "n_owner_occ": 13513,
+   "pct_owner_occ_parcel_method": 64.0,
+   "n_owner_occ_exact": 12629,
+   "n_likely_owner_occ": 884,
+   "n_absentee_local": 5791,
+   "n_absentee_out_of_state": 1809,
+   "n_unknown": 17,
+   "exemption_agreement_pct": null,
+   "exemption_note": "not in extract",
+   "census_pct_owner_occupied": null,
+   "census_pct_seasonal_vacant": null,
+   "census_pct_renter": null,
+   "census_housing_units": null,
+   "census_median_home_value": null,
+   "median_living_sqft": 1628.0,
+   "median_footprint_sqft": 1753,
+   "footprint_hit_rate_pct": 99.8,
+   "n_big_roof": 4093,
+   "n_recent_sale": 2024,
+   "n_new_owner_12mo": 7,
+   "ls_date_unparseable": 0,
+   "latest_sale_date": "2025-12-10",
+   "solar_installs_res": 1865,
+   "solar_installs_24mo": 174,
+   "solar_kw_res": 15041.5,
+   "solar_24mo_window": "2023-01-14 to 2025-01-14",
+   "solar_penetration_pct": 8.83,
+   "n_hex": 924,
+   "target_doors": 13513,
+   "villages": {
+    "Centerville": 5330,
+    "Hyannis": 5079,
+    "Marstons Mills": 3524,
+    "Osterville": 2249,
+    "Cotuit": 2128,
+    "Barnstable Village": 1639,
+    "West Barnstable": 1181
+   }
+  },
+  {
+   "town": "Yarmouth",
+   "massgis_town_id": 351,
+   "cousub_fips": "82525",
+   "fy_vintage": 2026,
+   "n_parcels": 15701,
+   "n_sfh": 12947,
+   "n_secondary_104_105_109": 689,
+   "n_owner_occ": 7574,
+   "pct_owner_occ_parcel_method": 58.5,
+   "n_owner_occ_exact": 7413,
+   "n_likely_owner_occ": 161,
+   "n_absentee_local": 4129,
+   "n_absentee_out_of_state": 1242,
+   "n_unknown": 2,
+   "exemption_agreement_pct": null,
+   "exemption_note": "n/a (town has no residential exemption)",
+   "census_pct_owner_occupied": null,
+   "census_pct_seasonal_vacant": null,
+   "census_pct_renter": null,
+   "census_housing_units": null,
+   "census_median_home_value": null,
+   "median_living_sqft": 1344.0,
+   "median_footprint_sqft": 1620,
+   "footprint_hit_rate_pct": 99.9,
+   "n_big_roof": 1282,
+   "n_recent_sale": 1214,
+   "n_new_owner_12mo": 2,
+   "ls_date_unparseable": 0,
+   "latest_sale_date": "2025-09-23",
+   "solar_installs_res": 937,
+   "solar_installs_24mo": 97,
+   "solar_kw_res": 6596.1,
+   "solar_24mo_window": "2023-01-14 to 2025-01-14",
+   "solar_penetration_pct": 7.24,
+   "n_hex": 406,
+   "target_doors": 7574,
+   "villages": {
+    "South Yarmouth": 5074,
+    "West Yarmouth": 4804,
+    "Yarmouth Port": 3069
+   }
+  },
+  {
+   "town": "Dennis",
+   "massgis_town_id": 75,
+   "cousub_fips": "16775",
+   "fy_vintage": 2025,
+   "n_parcels": 14804,
+   "n_sfh": 11753,
+   "n_secondary_104_105_109": 634,
+   "n_owner_occ": 4785,
+   "pct_owner_occ_parcel_method": 40.7,
+   "n_owner_occ_exact": 3571,
+   "n_likely_owner_occ": 1214,
+   "n_absentee_local": 5183,
+   "n_absentee_out_of_state": 1785,
+   "n_unknown": 0,
+   "exemption_agreement_pct": null,
+   "exemption_note": "n/a (town has no residential exemption)",
+   "census_pct_owner_occupied": null,
+   "census_pct_seasonal_vacant": null,
+   "census_pct_renter": null,
+   "census_housing_units": null,
+   "census_median_home_value": null,
+   "median_living_sqft": 1385.0,
+   "median_footprint_sqft": 1473,
+   "footprint_hit_rate_pct": 99.8,
+   "n_big_roof": 1489,
+   "n_recent_sale": 1018,
+   "n_new_owner_12mo": 0,
+   "ls_date_unparseable": 1,
+   "latest_sale_date": "2024-12-12",
+   "solar_installs_res": 521,
+   "solar_installs_24mo": 47,
+   "solar_kw_res": 3740.1,
+   "solar_24mo_window": "2023-01-14 to 2025-01-14",
+   "solar_penetration_pct": 4.43,
+   "n_hex": 398,
+   "target_doors": 4785,
+   "villages": {
+    "South Dennis": 2755,
+    "Dennis Port": 2726,
+    "Dennis": 2277,
+    "East Dennis": 2146,
+    "West Dennis": 1849
+   }
+  }
+ ],
+ "sanity": [
+  {
+   "check": "Barnstable SFH count in range",
+   "ok": true,
+   "detail": "21,130 (expected 15,000-23,000)"
+  },
+  {
+   "check": "Barnstable owner-occ share 40-75%",
+   "ok": true,
+   "detail": "64.0%"
+  },
+  {
+   "check": "Barnstable UNKNOWN owner-occ < 5%",
+   "ok": true,
+   "detail": "0.08%"
+  },
+  {
+   "check": "Barnstable footprint hit rate >= 90%",
+   "ok": true,
+   "detail": "99.8%"
+  },
+  {
+   "check": "Barnstable LS_DATE unparseable < 3%",
+   "ok": true,
+   "detail": "0.0% (0 rows)"
+  },
+  {
+   "check": "Yarmouth SFH count in range",
+   "ok": true,
+   "detail": "12,947 (expected 8,000-14,000)"
+  },
+  {
+   "check": "Yarmouth owner-occ share 40-75%",
+   "ok": true,
+   "detail": "58.5%"
+  },
+  {
+   "check": "Yarmouth UNKNOWN owner-occ < 5%",
+   "ok": true,
+   "detail": "0.02%"
+  },
+  {
+   "check": "Yarmouth footprint hit rate >= 90%",
+   "ok": true,
+   "detail": "99.9%"
+  },
+  {
+   "check": "Yarmouth LS_DATE unparseable < 3%",
+   "ok": true,
+   "detail": "0.0% (0 rows)"
+  },
+  {
+   "check": "Dennis SFH count in range",
+   "ok": true,
+   "detail": "11,753 (expected 7,500-12,500)"
+  },
+  {
+   "check": "Dennis owner-occ share 40-75%",
+   "ok": true,
+   "detail": "40.7%"
+  },
+  {
+   "check": "Dennis UNKNOWN owner-occ < 5%",
+   "ok": true,
+   "detail": "0.0%"
+  },
+  {
+   "check": "Dennis footprint hit rate >= 90%",
+   "ok": true,
+   "detail": "99.8%"
+  },
+  {
+   "check": "Dennis LS_DATE unparseable < 3%",
+   "ok": true,
+   "detail": "0.01% (1 rows)"
+  },
+  {
+   "check": "docs/data total size < 15 MB",
+   "ok": true,
+   "detail": "2.06 MB"
+  }
+ ]
+}

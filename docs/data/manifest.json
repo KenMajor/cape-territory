@@ -1,0 +1,117 @@
+{
+ "generated_at": "2026-09-19 01:17 UTC",
+ "phase": 1,
+ "h3_resolution": 9,
+ "recent_sale_since": "2023-09-01",
+ "new_owner_since": "2025-09-01",
+ "towns": [
+  {
+   "name": "Barnstable",
+   "slug": "barnstable",
+   "bounds": [
+    -70.4676,
+    41.5876,
+    -70.25963,
+    41.74009
+   ],
+   "n_hex": 924,
+   "villages": [
+    "Barnstable Village",
+    "Centerville",
+    "Cotuit",
+    "Cummaquid",
+    "Hyannis",
+    "Hyannis Port",
+    "Marstons Mills",
+    "Osterville",
+    "West Barnstable",
+    "West Hyannisport"
+   ]
+  },
+  {
+   "name": "Yarmouth",
+   "slug": "yarmouth",
+   "bounds": [
+    -70.27429,
+    41.60925,
+    -70.15985,
+    41.72845
+   ],
+   "n_hex": 406,
+   "villages": [
+    "South Yarmouth",
+    "West Yarmouth",
+    "Yarmouth Port"
+   ]
+  },
+  {
+   "name": "Dennis",
+   "slug": "dennis",
+   "bounds": [
+    -70.24139,
+    41.64821,
+    -70.11755,
+    41.7607
+   ],
+   "n_hex": 398,
+   "villages": [
+    "Dennis",
+    "Dennis Port",
+    "East Dennis",
+    "South Dennis",
+    "West Dennis"
+   ]
+  }
+ ],
+ "weights": {
+  "pct_owner_occ": 0.4,
+  "median_footprint_sqft": 0.25,
+  "pct_recent_sale": 0.15,
+  "n_sfh": 0.1,
+  "solar_penetration_inv": 0.1
+ },
+ "breaks": {
+  "score": [
+   37.8,
+   46.0,
+   54.1,
+   62.7
+  ],
+  "pct_owner_occ": [
+   35.0,
+   54.8,
+   68.8,
+   80.0
+  ],
+  "median_footprint_sqft": [
+   1372.1,
+   1643.8,
+   1894.1,
+   2268.9
+  ],
+  "pct_recent_sale": [
+   0.0,
+   6.9,
+   10.3,
+   14.7
+  ],
+  "solar_penetration_pct": [
+   4.43,
+   7.24,
+   8.83
+  ]
+ },
+ "big_roof_threshold_sqft": 2455,
+ "files": {
+  "hexes_barnstable.geojson": 924,
+  "sales_barnstable.geojson": 2024,
+  "bigroof_barnstable.geojson": 4093,
+  "hexes_yarmouth.geojson": 406,
+  "sales_yarmouth.geojson": 1214,
+  "bigroof_yarmouth.geojson": 1282,
+  "hexes_dennis.geojson": 398,
+  "sales_dennis.geojson": 1018,
+  "bigroof_dennis.geojson": 1489,
+  "towns.geojson": 3
+ }
+}
